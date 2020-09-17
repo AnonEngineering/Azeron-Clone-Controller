@@ -104,6 +104,7 @@ void setup() {
     pinMode(dSwitch[i].pin, INPUT_PULLUP);
   }
   // Shows key mapping if in DEBUG
+  #ifdef DEBUG
   while (!Serial);  // Wait for serial to come up
   DEBUG_PRINTLN("Key mapping: ");
   DEBUG_PRINT("Pin\t");
@@ -114,6 +115,7 @@ void setup() {
     DEBUG_PRINTLN(dSwitch[i].cmd);
   }
   DEBUG_PRINTLN();
+  #endif
 }
 
 void loop() {
