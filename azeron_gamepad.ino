@@ -61,8 +61,8 @@
 #endif
 
 //Globals
-const int xCenter = 280;    // Tweak for your D-pad's center values, should be 250
-const int yCenter = 290;
+const int xCenter = 250;    // Tweak for your D-pad's center values, should be 250
+const int yCenter = 250;
 const int xDeadband = 150;  // Sets the size of the center deadband
 const int yDeadband = 150;
 
